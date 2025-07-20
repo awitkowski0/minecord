@@ -1,5 +1,6 @@
 package me.axieum.mcmod.minecord.api.presence.category;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -10,7 +11,7 @@ import java.util.Random;
 public class PresenceCategory
 {
     /** An instance of random to aid in choosing presences. */
-    protected static final Random RANDOM = new Random();
+    protected static final Random RANDOM = new SecureRandom();
 
     /** The number of seconds between presence updates (at least 15s). */
     protected long interval = 60;
